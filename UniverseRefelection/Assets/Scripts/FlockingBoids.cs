@@ -12,6 +12,12 @@ public class FlockingBoids : MonoBehaviour {
     public float maxspeed = 3.0f; // maximum speed
     public float maxforce = 0.05f; // Maximum steering force
     public float maximumDistance = 100.0f;
+    public float desiredSeparation = 25.0f;
+
+    public bool isMainFlock = false;
+    
+    // private variables
+    private Transform _cameraTransform;
     
     private void Start() {
         _flock = new Flock();
@@ -19,13 +25,27 @@ public class FlockingBoids : MonoBehaviour {
         for (int i = 0; i < numberOfBoids; i++) {
             var b = Instantiate(boidPrefab);
             // var b = new Boid(Screen.width / 2.0f, Screen.height / 2.0f, 0);
+            // if(i == 0) Camera.main.transform.SetParent(b.transform);
             var boid = b.GetComponent<Boid>();
             boid.SetUp(Screen.width / 2.0f, Screen.height / 2.0f, 0);
             _flock.AddBoid(boid);
         }
+
+        _cameraTransform = Camera.main.transform;
     }
 
-    private void Update() => _flock.UpdateBoids(r, maxspeed, maxforce, maximumDistance);
+    private void Update() {
+        _flock.UpdateBoids(r, maxspeed, maxforce, maximumDistance, desiredSeparation);
+
+        // Camera.main.transform.position = Vector3.Lerp(Camera.main.transform.position, _flock.boids[15].transform.position, 1);
+
+        if(!isMainFlock) return;
+        _cameraTransform.position = _flock.AveragePosition();
+        // _cameraTransform.rotation = _flock.AverageRotation();
+        // _cameraTransform.rotation = Quaternion.Slerp(_cameraTransform.rotation, _flock.boids[_flock.boids.Count / 2].transform.rotation, 50);
+        // _cameraTransform.rotation = Quaternion.Lerp(Camera.main.transform.rotation, _flock.boids[15].transform.rotation, 100);
+        _cameraTransform.rotation = _flock.boids[_flock.boids.Count / 2].transform.rotation;
+    }
 
         private void OnMouseDrag() {
         var b = Instantiate(boidPrefab);

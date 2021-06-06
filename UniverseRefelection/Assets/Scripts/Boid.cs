@@ -10,6 +10,7 @@ public class Boid: MonoBehaviour {
     public float maxspeed = 3.0f; // maximum speed
     public float maxforce = 0.05f; // Maximum steering force
     public float maximumDistance = 100.0f;
+    public float desiredSeparation = 25.0f;
 
     public void SetUp(float x, float y, float z) {
         acceleration = new Vector3(0, 0, 0);
@@ -80,14 +81,13 @@ public class Boid: MonoBehaviour {
     }
 
     private Vector3 Separate(Boid[] boids) {
-        var desiredseparation = 25.0f;
         var steer = new Vector3(0, 0, 0);
         var count = 0;
         // For every boid in the system, check if it's too close
         for (int i = 0; i < boids.Length; i++) {
             var d = Vector3.Distance(position, boids[i].position);
             // If the distance is greater than 0 and less than an arbitrary amount (0 when you are yourself)
-            if ((d > 0) && (d < desiredseparation)) {
+            if ((d > 0) && (d < desiredSeparation)) {
                 // Calculate vector pointing away from neighbor
                 var diff = Calculate.Subtract(position, boids[i].position);
                 diff.Normalize();
