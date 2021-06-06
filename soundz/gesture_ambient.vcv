@@ -11,8 +11,8 @@
       "rightModuleId": 67,
       "data": {
         "audio": {
-          "driver": 5,
-          "deviceName": "Apple Inc.: Built-in Output",
+          "driver": 6,
+          "deviceName": "Speakers (High Definition Audio Device)",
           "offset": 0,
           "maxChannels": 8,
           "sampleRate": 44100,
@@ -333,23 +333,23 @@
         },
         {
           "id": 20,
-          "value": 1.0
+          "value": 0.0
         },
         {
           "id": 21,
-          "value": 1.0
+          "value": 0.0
         },
         {
           "id": 22,
-          "value": 1.0
+          "value": 0.0
         },
         {
           "id": 23,
-          "value": 1.0
+          "value": 0.0
         },
         {
           "id": 24,
-          "value": 1.0
+          "value": 0.0
         },
         {
           "id": 25,
@@ -1355,7 +1355,7 @@
         },
         {
           "id": 8,
-          "value": 0.0
+          "value": 1.0
         },
         {
           "id": 9,
@@ -1367,7 +1367,7 @@
         },
         {
           "id": 11,
-          "value": 0.0
+          "value": 1.0
         },
         {
           "id": 12,
@@ -1439,7 +1439,7 @@
         },
         {
           "id": 29,
-          "value": 0.0
+          "value": 1.0
         },
         {
           "id": 30,
@@ -1470,7 +1470,6 @@
           "value": 0.0
         }
       ],
-      "rightModuleId": 4174,
       "data": {
         "version": 17,
         "osc": {
@@ -1479,7 +1478,7 @@
           "RxPort": 8108,
           "Namespace": "",
           "AutoReconnectAtLoad": false,
-          "Initialized": false
+          "Initialized": true
         },
         "numCh": 8,
         "inputChannels": [
@@ -1574,17 +1573,17 @@
         ],
         "outputChannels": [
           {
-            "path": "/annotations/thumb",
+            "path": "/happy",
             "dataType": 1,
-            "convertVals": 0,
+            "convertVals": 1,
             "clipVals": 0,
             "minV": -5.0,
-            "maxV": 5.58333015,
+            "maxV": 5.58300018,
             "minOSC": 0.0,
-            "maxOSC": 127.0
+            "maxOSC": 1.0
           },
           {
-            "path": "/poses/0/keypoints/leftWrist/x",
+            "path": "/sad",
             "dataType": 1,
             "convertVals": 0,
             "clipVals": 0,
@@ -1656,7 +1655,7 @@
         ]
       },
       "pos": [
-        42,
+        18,
         3
       ]
     },
@@ -3991,22 +3990,8 @@
       "version": "1.0.2",
       "model": "MentalLogic",
       "params": [],
-      "leftModuleId": 4174,
       "pos": [
         73,
-        3
-      ]
-    },
-    {
-      "id": 4174,
-      "plugin": "Fundamental",
-      "version": "1.4.0",
-      "model": "Split",
-      "params": [],
-      "leftModuleId": 112,
-      "rightModuleId": 4173,
-      "pos": [
-        68,
         3
       ]
     },
@@ -5139,12 +5124,12 @@
         "hues": [
           0.0,
           0.333499998,
-          0.649999976
+          0.650000036
         ],
         "fillHues": [
           0.0,
           0.333499998,
-          0.649999976
+          0.650000036
         ],
         "fillOn": [
           0,
@@ -5184,7 +5169,7 @@
           ],
           [
             0.0,
-            0.100000262,
+            0.0999999046,
             1.0
           ]
         ],
@@ -5201,7 +5186,7 @@
           ],
           [
             0.0,
-            0.100000262,
+            0.0999999046,
             1.0
           ]
         ],
@@ -5217,6 +5202,70 @@
       },
       "pos": [
         79,
+        3
+      ]
+    },
+    {
+      "id": 4185,
+      "plugin": "CountModula",
+      "version": "1.14.0",
+      "model": "GateModifier",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        },
+        {
+          "id": 1,
+          "value": 4.14000034
+        },
+        {
+          "id": 2,
+          "value": 1.0
+        },
+        {
+          "id": 3,
+          "value": 1.0
+        }
+      ],
+      "data": {
+        "moduleVersion": 1,
+        "theme": 0
+      },
+      "pos": [
+        48,
+        3
+      ]
+    },
+    {
+      "id": 4186,
+      "plugin": "CountModula",
+      "version": "1.14.0",
+      "model": "GateModifier",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        },
+        {
+          "id": 1,
+          "value": 6.01500082
+        },
+        {
+          "id": 2,
+          "value": 1.0
+        },
+        {
+          "id": 3,
+          "value": 1.0
+        }
+      ],
+      "data": {
+        "moduleVersion": 1,
+        "theme": 0
+      },
+      "pos": [
+        57,
         3
       ]
     }
@@ -5687,14 +5736,6 @@
       "color": "#c9b70e"
     },
     {
-      "id": 9905,
-      "outputModuleId": 112,
-      "outputId": 1,
-      "inputModuleId": 4174,
-      "inputId": 0,
-      "color": "#0c8e15"
-    },
-    {
       "id": 9909,
       "outputModuleId": 4155,
       "outputId": 0,
@@ -5831,22 +5872,6 @@
       "color": "#c9b70e"
     },
     {
-      "id": 9913,
-      "outputModuleId": 4174,
-      "outputId": 2,
-      "inputModuleId": 4173,
-      "inputId": 3,
-      "color": "#0c8e15"
-    },
-    {
-      "id": 9912,
-      "outputModuleId": 4174,
-      "outputId": 1,
-      "inputModuleId": 4173,
-      "inputId": 1,
-      "color": "#0986ad"
-    },
-    {
       "id": 9897,
       "outputModuleId": 4158,
       "outputId": 1,
@@ -5871,20 +5896,52 @@
       "color": "#c91847"
     },
     {
-      "id": 9933,
-      "outputModuleId": 4174,
-      "outputId": 1,
-      "inputModuleId": 4184,
-      "inputId": 9,
+      "id": 9935,
+      "outputModuleId": 112,
+      "outputId": 0,
+      "inputModuleId": 4185,
+      "inputId": 1,
       "color": "#0986ad"
     },
     {
-      "id": 9934,
-      "outputModuleId": 4174,
-      "outputId": 2,
-      "inputModuleId": 4184,
-      "inputId": 10,
+      "id": 9936,
+      "outputModuleId": 4185,
+      "outputId": 0,
+      "inputModuleId": 4173,
+      "inputId": 1,
+      "color": "#c91847"
+    },
+    {
+      "id": 9939,
+      "outputModuleId": 4186,
+      "outputId": 0,
+      "inputModuleId": 4173,
+      "inputId": 3,
       "color": "#c9b70e"
+    },
+    {
+      "id": 9938,
+      "outputModuleId": 112,
+      "outputId": 2,
+      "inputModuleId": 4186,
+      "inputId": 1,
+      "color": "#c9b70e"
+    },
+    {
+      "id": 9940,
+      "outputModuleId": 112,
+      "outputId": 2,
+      "inputModuleId": 4185,
+      "inputId": 2,
+      "color": "#0c8e15"
+    },
+    {
+      "id": 9941,
+      "outputModuleId": 112,
+      "outputId": 0,
+      "inputModuleId": 4186,
+      "inputId": 2,
+      "color": "#c91847"
     }
   ]
 }

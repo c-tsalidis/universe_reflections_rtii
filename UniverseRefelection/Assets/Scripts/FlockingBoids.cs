@@ -41,10 +41,10 @@ public class FlockingBoids : MonoBehaviour {
 
         if(!isMainFlock) return;
         _cameraTransform.position = _flock.AveragePosition();
-        // _cameraTransform.rotation = _flock.AverageRotation();
+         _cameraTransform.rotation = _flock.AverageRotation();
         // _cameraTransform.rotation = Quaternion.Slerp(_cameraTransform.rotation, _flock.boids[_flock.boids.Count / 2].transform.rotation, 50);
         // _cameraTransform.rotation = Quaternion.Lerp(Camera.main.transform.rotation, _flock.boids[15].transform.rotation, 100);
-        _cameraTransform.rotation = _flock.boids[_flock.boids.Count / 2].transform.rotation;
+        //_cameraTransform.rotation = _flock.boids[_flock.boids.Count / 2].transform.rotation;
     }
 
         private void OnMouseDrag() {
