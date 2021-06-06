@@ -465,6 +465,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numberOfBoids: 100
   boidPrefab: {fileID: 2407764545111341650, guid: abd3b57fb32bb49f3a8318ae74255a8e, type: 3}
+  r: 100
+  maxspeed: 1
+  maxforce: 0.05
+  maximumDistance: 10
 --- !u!4 &628147188
 Transform:
   m_ObjectHideFlags: 0

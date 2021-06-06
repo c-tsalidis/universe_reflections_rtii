@@ -9,11 +9,11 @@ public class Boid: MonoBehaviour {
     public float r = 3.0f;
     public float maxspeed = 3.0f; // maximum speed
     public float maxforce = 0.05f; // Maximum steering force
-    [SerializeField] private float maximumDistance = 100.0f;
+    public float maximumDistance = 100.0f;
 
     public void SetUp(float x, float y, float z) {
         acceleration = new Vector3(0, 0, 0);
-        velocity = new Vector3(UnityEngine.Random.Range(-1, 1), UnityEngine.Random.Range(-1, 1), 0);
+        velocity = new Vector3(UnityEngine.Random.Range(-1, 1), UnityEngine.Random.Range(-1, 1), UnityEngine.Random.Range(-1, 1));
         // position = new Vector3(x, y, z);
     }
 
@@ -113,6 +113,7 @@ public class Boid: MonoBehaviour {
     }
 
     public Vector3 Seek(Vector3 target) {
+        // if the boids are heading very far off the screen (more than the maximum distance they should have to the origin point), then change their target position to zero
         if (Vector3.Distance(target, Vector3.zero) > maximumDistance) {
             target = Vector3.zero;
         }

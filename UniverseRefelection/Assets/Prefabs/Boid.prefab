@@ -110,7 +110,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   acceleration: {x: 0, y: 0, z: 0}
-  r: 10
+  r: 100
   maxspeed: 1
   maxforce: 0.05
   maximumDistance: 10
