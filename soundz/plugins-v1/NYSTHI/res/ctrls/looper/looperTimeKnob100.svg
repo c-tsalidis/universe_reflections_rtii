@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="100"
+   height="100"
+   viewBox="0 0 26.458333 26.458333"
+   version="1.1"
+   id="svg49872"
+   inkscape:version="0.92.2 5c3e80d, 2017-08-06"
+   sodipodi:docname="looperTimeKnob100.svg">
+  <defs
+     id="defs49866">
+    <clipPath
+       id="clip12">
+      <path
+         d="m 143,129.75 h 3 V 158 h -3 z m 0,0"
+         id="path28860"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clip11">
+      <path
+         d="m 117.39453,129.75 h 54 v 54.00391 h -54 z m 0,0"
+         id="path28857"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clip150">
+      <path
+         d="m 176,208.92578 h 2 V 228 h -2 z m 0,0"
+         id="path29465"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clip149">
+      <path
+         d="m 159.27734,208.92578 h 36 v 36 h -36 z m 0,0"
+         id="path29462"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clip142">
+      <path
+         d="m 110,208.92578 h 3 V 228 h -3 z m 0,0"
+         id="path29320"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clip141">
+      <path
+         d="m 93.511719,208.92578 h 36.000001 v 36 H 93.511719 Z m 0,0"
+         id="path29317"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="4"
+     inkscape:cx="-5.645579"
+     inkscape:cy="54.121701"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     units="px"
+     inkscape:window-width="1233"
+     inkscape:window-height="739"
+     inkscape:window-x="243"
+     inkscape:window-y="19"
+     inkscape:window-maximized="0"
+     inkscape:snap-global="true"
+     inkscape:snap-bbox="true"
+     inkscape:snap-bbox-midpoints="true"
+     inkscape:snap-object-midpoints="true"
+     inkscape:snap-bbox-edge-midpoints="true"
+     inkscape:object-paths="true"
+     inkscape:pagecheckerboard="true" />
+  <metadata
+     id="metadata49869">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-73.816227,-62.088956)">
+    <g
+       id="g831">
+      <rect
+         ry="0"
+         y="62.088959"
+         x="86.301254"
+         height="4.4356613"
+         width="1.4882814"
+         id="rect826"
+         style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.37150455;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path835"
+         d="m 87.045396,63.411876 a 11.906251,11.906249 0 0 0 -11.90625,11.90625 11.906251,11.906249 0 0 0 11.90625,11.90625 11.906251,11.906249 0 0 0 11.906251,-11.90625 11.906251,11.906249 0 0 0 -11.906251,-11.90625 z m 0,1.488282 A 10.417969,10.417968 0 0 1 97.463365,75.318126 10.417969,10.417968 0 0 1 87.045396,85.736094 10.417969,10.417968 0 0 1 76.627427,75.318126 10.417969,10.417968 0 0 1 87.045396,64.900158 Z"
+         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.46246573;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.95609753" />
+    </g>
+  </g>
+</svg>

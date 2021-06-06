@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="33.45" height="33.45" viewBox="0 0 33.45 33.45">
+  <title>XFXOverdriveKnob</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="svg8">
+      <circle id="path2985" cx="16.72" cy="16.72" r="16.72" style="fill: #bcbec0"/>
+      <path id="path3832" d="M16.72,30.25c-4.89,0-2.11,2.44-6.52.31s-.77-1.47-3.82-5.29-3.22-.13-4.31-4.9.67-1.51,1.76-6.28S1.93,11.49,5,7.67s1.6-.42,6-2.54S11.83,2,16.72,2,18,3,22.46,5.12s3-1.28,6,2.54.05,1.65,1.14,6.42,2.85,1.51,1.76,6.28-1.26,1.07-4.31,4.9.59,3.17-3.82,5.29-1.62-.31-6.52-.31Z" style="fill: #262626"/>
+      <ellipse id="path2985-1" cx="16.72" cy="16.72" rx="9.83" ry="9.88" style="fill: #f4f4e6"/>
+      <circle id="path3381" cx="16.72" cy="0.97" r="0.67" style="fill: red"/>
+      <line x1="16.72" y1="14.16" x2="16.72" y2="6.84" style="fill: none;stroke: #0a8900;stroke-width: 2px"/>
+      <line x1="16.72" y1="2.01" x2="16.72" style="fill: none;stroke: #0a8900;stroke-width: 2px"/>
+    </g>
+  </g>
+</svg>

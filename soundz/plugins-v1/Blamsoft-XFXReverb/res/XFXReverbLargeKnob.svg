@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="50.15" height="50.15" viewBox="0 0 50.15 50.15">
+  <title>XFXReverbLargeKnob</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="svg8">
+      <circle id="path2985" cx="25.07" cy="25.07" r="25.07" style="fill: #bcbec0"/>
+      <path id="path3832" d="M25.07,45.36c-7.34,0-3.16,3.66-9.77.47s-1.15-2.2-5.72-7.93-4.83-.19-6.46-7.34,1-2.27,2.63-9.42S2.89,17.23,7.47,11.5s2.4-.63,9-3.81S17.74,3,25.07,3s2,1.48,8.6,4.66,4.43-1.92,9,3.81.08,2.48,1.71,9.63S48.66,23.4,47,30.55s-1.89,1.61-6.46,7.34.89,4.75-5.72,7.93-2.43-.47-9.77-.47Z" style="fill: #262626"/>
+      <ellipse id="path2985-1" cx="25.07" cy="25.07" rx="14.74" ry="14.82" style="fill: #f4f4e6"/>
+      <circle id="path3381" cx="25.07" cy="1.46" r="1" style="fill: red"/>
+      <line x1="25.07" y1="21.66" x2="25.07" y2="10.26" style="fill: none;stroke: red;stroke-width: 2.8px"/>
+      <line x1="25.07" y1="3.02" x2="25.07" style="fill: none;stroke: red;stroke-width: 2.8px"/>
+    </g>
+  </g>
+</svg>

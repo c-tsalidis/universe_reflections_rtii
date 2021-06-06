@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <title>XFXWaveSmallestKnob</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="svg8">
+      <g>
+        <circle id="path2985" cx="10" cy="10" r="10" style="fill: #bcbec0"/>
+        <path id="path3832" d="M10,18.09c-2.93,0-1.26,1.46-3.9.19s-.46-.88-2.28-3.16S1.9,15,1.24,12.18s.4-.9,1.05-3.76S1.15,6.87,3,4.59s1-.25,3.59-1.52S7.07,1.2,10,1.2s.79.59,3.43,1.86S15.2,2.3,17,4.59s0,1,.68,3.84,1.7.9,1.05,3.76-.75.64-2.58,2.93.35,1.89-2.28,3.16-1-.19-3.9-.19Z" style="fill: #262626"/>
+        <ellipse id="path2985-1" cx="10" cy="10" rx="5.88" ry="5.91" style="fill: #f4f4e6"/>
+        <circle id="path3381" cx="10" cy="0.58" r="0.4" style="fill: red"/>
+        <line x1="10" y1="8.43" x2="10" y2="4.09" style="fill: none;stroke: #00aab7;stroke-width: 2px"/>
+        <line x1="10" y1="1.2" x2="10" style="fill: none;stroke: #00aab7;stroke-width: 2px"/>
+      </g>
+    </g>
+  </g>
+</svg>

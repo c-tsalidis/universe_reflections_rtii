@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 40 40" enable-background="new 0 0 40 40" xml:space="preserve">
+<g id="KNOBS">
+	<g>
+		<circle fill="#2E89DC" cx="20" cy="19.99989" r="19.75"/>
+		<path fill="#0F0F0F" d="M20,0.50001c10.75244,0,19.5,8.74768,19.5,19.5s-8.74756,19.5-19.5,19.5s-19.5-8.74768-19.5-19.5
+			S9.24756,0.50001,20,0.50001 M20,0.00001c-11.04565,0-20,8.95428-20,20c0,11.04565,8.95435,20,20,20s20-8.95435,20-20
+			C40,8.95429,31.04565,0.00001,20,0.00001L20,0.00001z"/>
+	</g>
+	<circle fill="#0E74AF" cx="20" cy="19.99999" r="13"/>
+	<circle fill="#2E89DC" cx="20" cy="19.99999" r="10.5"/>
+	<circle fill="#FFFFFF" cx="20" cy="19.99999" r="8"/>
+	<polygon fill="#FFFFFF" points="20,1.43204 18.57092,5.91794 21.42908,5.91794 	"/>
+</g>
+</svg>

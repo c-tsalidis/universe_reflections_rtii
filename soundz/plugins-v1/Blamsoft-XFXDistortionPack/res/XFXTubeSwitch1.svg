@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="14.15" height="23.4" viewBox="0 0 14.15 23.4">
+  <title>XFXTubeSwitch1</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="svg8">
+      <g>
+        <path d="M1.9.4l10.28,0A1.53,1.53,0,0,1,13.72,1.9l.06,19.56A1.53,1.53,0,0,1,12.25,23L2,23A1.53,1.53,0,0,1,.43,21.5L.38,1.95A1.54,1.54,0,0,1,1.9.4Z" style="fill: none;stroke: #f4f4e6;stroke-miterlimit: 10;stroke-width: 0.75px"/>
+        <path d="M1.74,1.24l10.61,0a.61.61,0,0,1,.62.61L13,21.53a.61.61,0,0,1-.61.62l-10.61,0a.61.61,0,0,1-.62-.61L1.12,1.86A.61.61,0,0,1,1.74,1.24Z" style="fill: #414042"/>
+        <rect x="1.14" y="8.3" width="11.84" height="1.47" transform="translate(-0.03 0.02) rotate(-0.17)" style="fill: #0091c4"/>
+        <path d="M1.15,10.1V11a.43.43,0,0,0,.43.42l11,0A.42.42,0,0,0,13,11v-.93Z" style="fill: #0091c4"/>
+        <path d="M12.54,1.24l-11,0a.43.43,0,0,0-.43.42v.95L13,2.61V1.68a.42.42,0,0,0-.41-.44Z" style="fill: #0091c4"/>
+        <rect x="1.13" y="2.95" width="11.84" height="1.47" transform="translate(-0.01 0.02) rotate(-0.17)" style="fill: #0091c4"/>
+        <rect x="1.14" y="6.52" width="11.84" height="1.47" transform="translate(-0.02 0.02) rotate(-0.17)" style="fill: #0091c4"/>
+        <rect x="1.13" y="4.73" width="11.84" height="1.47" transform="translate(-0.02 0.02) rotate(-0.17)" style="fill: #0091c4"/>
+      </g>
+    </g>
+  </g>
+</svg>

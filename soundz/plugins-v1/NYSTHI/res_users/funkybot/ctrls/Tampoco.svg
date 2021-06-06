@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   preserveAspectRatio="xMidYMid meet"
+   zoomAndPan="magnify"
+   id="Test File"
+   viewBox="-21 -21 2.625 2.625"
+   width="50"
+   height="50"
+   sodipodi:docname="Tampoco.svg"
+   inkscape:version="0.92.2 5c3e80d, 2017-08-06"
+   style="enable-background:new">
+  <metadata
+     id="metadata34">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1221"
+     inkscape:window-height="720"
+     id="namedview32"
+     showgrid="false"
+     inkscape:zoom="2.36"
+     inkscape:cx="-27.330509"
+     inkscape:cy="34.533899"
+     inkscape:window-x="184"
+     inkscape:window-y="51"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="Test File"
+     inkscape:pagecheckerboard="true" />
+  <defs
+     id="defs16">
+    <radialGradient
+       id="shine"
+       cx="-28.372881"
+       cy="-16.894068"
+       r="20"
+       fx="-28.372881"
+       fy="-16.894068"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(-38.618644,-9.788136)">
+      <stop
+         offset="0"
+         stop-color="white"
+         stop-opacity=".7"
+         id="stop2" />
+      <stop
+         offset="1"
+         stop-color="white"
+         stop-opacity="0"
+         id="stop4" />
+    </radialGradient>
+    <radialGradient
+       id="grad"
+       cx="-25.983051"
+       cy="3.9152544"
+       r="20.075001"
+       fx="-25.983051"
+       fy="3.9152544"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.0460772,0,0,1.0460772,27.180278,-4.0956585)"
+       xlink:href="#shine">
+      <stop
+         offset="0"
+         stop-color="yellow"
+         id="stop7" />
+      <stop
+         offset=".75"
+         stop-color="yellow"
+         id="stop9" />
+      <stop
+         offset=".95"
+         stop-color="#ee0"
+         id="stop11" />
+      <stop
+         offset="1"
+         stop-color="#e8e800"
+         id="stop13" />
+    </radialGradient>
+  </defs>
+  <g
+     id="g869"
+     transform="matrix(0.06250001,0,0,0.06249999,-19.687501,-19.6875)">
+    <circle
+       r="20.921545"
+       cy="-6.0349703e-07"
+       cx="-1.4901161e-08"
+       style="display:inline;fill:url(#grad);fill-opacity:1;stroke:#000000;stroke-width:0.1569116"
+       id="circle18" />
+    <path
+       style="display:inline;fill:#000000"
+       d="m -3.5,-7 a 2.5,4 0 0 1 -2.5,4 2.5,4 0 0 1 -2.5,-4 2.5,4 0 0 1 2.5,-4 2.5,4 0 0 1 2.5,4 z"
+       id="ellipse22"
+       inkscape:connector-curvature="0" />
+    <path
+       style="display:inline;fill:none;stroke:#000000;stroke-width:0.5;stroke-linecap:round"
+       inkscape:connector-curvature="0"
+       d="m 10.6,2.7 a 4,4 0 0 0 4,3"
+       id="path24" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path853"
+       d="M 3.5,-7 A 2.5,4 0 0 0 6,-3 2.5,4 0 0 0 8.5,-7 2.5,4 0 0 0 6,-11 2.5,4 0 0 0 3.5,-7 Z"
+       style="display:inline;fill:#000000" />
+    <path
+       id="path855"
+       d="m -10.6,2.7 a 4,4 0 0 1 -4,3"
+       inkscape:connector-curvature="0"
+       style="display:inline;fill:none;stroke:#000000;stroke-width:0.5;stroke-linecap:round" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.81019044"
+       inkscape:connector-curvature="0"
+       id="path29"
+       d="m -12.073718,5.2709035 a 13.582933,15.657616 0 0 0 24.147436,0 13.079862,15.077703 0 0 1 -24.147436,0" />
+  </g>
+  <ellipse
+     style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.00269505;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     id="smileTOP"
+     cx="-19.6875"
+     cy="-19.6875"
+     rx="1.3125001"
+     ry="1.3124998" />
+  <rect
+     style="display:inline;opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.06001249;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     id="rect826"
+     width="0.13125002"
+     height="1.3124998"
+     x="-19.753126"
+     y="-21"
+     ry="0.062999986" />
+</svg>

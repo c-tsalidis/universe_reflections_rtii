@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:osb="http://www.openswatchbook.org/uri/2009/osb"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="15"
+   height="15"
+   viewBox="0 0 3.96875 3.9687501"
+   version="1.1"
+   id="svg6414"
+   inkscape:version="0.92.2 5c3e80d, 2017-08-06"
+   sodipodi:docname="nySmallBlackKnobMini.svg">
+  <defs
+     id="defs6408">
+    <linearGradient
+       id="linearGradient2295"
+       osb:paint="solid">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="0"
+         id="stop2293" />
+    </linearGradient>
+    <clipPath
+       id="clip82">
+      <path
+         d="m 979.55859,272.09375 h 26.63281 v 27.13281 h -26.63281 z m 0,0"
+         id="path22604"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <clipPath
+       id="clip83">
+      <path
+         d="m 992,272.09375 h 2 V 287 h -2 z m 0,0"
+         id="path22607"
+         inkscape:connector-curvature="0" />
+    </clipPath>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient2295"
+       id="linearGradient2297"
+       x1="38.659012"
+       y1="110.74461"
+       x2="39.364567"
+       y2="110.74461"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.80357143,0,0,0.79787211,7.1779603,23.281524)" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="8.3785952"
+     inkscape:cx="-12.068505"
+     inkscape:cy="-5.6643476"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1440"
+     inkscape:window-height="856"
+     inkscape:window-x="0"
+     inkscape:window-y="18"
+     inkscape:window-maximized="0"
+     showguides="false"
+     units="px">
+    <inkscape:grid
+       type="xygrid"
+       id="grid17" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata6411">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-36.542344,-110.65641)">
+    <g
+       transform="matrix(0.14902448,0,0,0.14796749,-109.43606,70.349359)"
+       clip-path="url(#clip82)"
+       id="g28551"
+       style="clip-rule:nonzero">
+      <path
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 1005.8555,288.88281 c -1.6407,7.16406 -8.78128,11.64844 -15.94925,10.00781 -7.16797,-1.64062 -11.64844,-8.78125 -10.00781,-15.94921 1.64062,-7.16797 8.78125,-11.64844 15.94922,-10.00782 7.16794,1.64063 11.64454,8.78125 10.00784,15.94922"
+         id="path28547"
+         inkscape:connector-curvature="0" />
+      <path
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 1005.8555,288.88281 c -1.6407,7.16406 -8.78128,11.64844 -15.94925,10.00781 -7.16797,-1.64062 -11.64844,-8.78125 -10.00781,-15.94921 1.64062,-7.16797 8.78125,-11.64844 15.94922,-10.00782 7.16794,1.64063 11.64454,8.78125 10.00784,15.94922"
+         id="path28549"
+         inkscape:connector-curvature="0" />
+    </g>
+    <rect
+       style="fill:url(#linearGradient2297);fill-opacity:1;stroke-width:0.24911958"
+       id="rect833"
+       width="0.56696427"
+       height="1.9703009"
+       x="38.243237"
+       y="110.65641" />
+  </g>
+</svg>

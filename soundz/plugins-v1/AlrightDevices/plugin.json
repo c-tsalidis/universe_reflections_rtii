@@ -1,0 +1,51 @@
+{
+  "slug": "AlrightDevices",
+  "name": "Alright Devices",
+  "version": "1.0.3",
+  "license": "proprietary",
+  "author": "Alright Devices",
+  "authorEmail": "tyler@alrightdevices.com",
+  "authorUrl": "https://www.alrightdevices.com/",
+  "pluginUrl": "",
+  "manualUrl": "",
+  "sourceUrl": "",
+  "donateUrl": "",
+  "modules": [
+    {
+      "slug": "Chronoblob2",
+      "name": "Chronoblob2",
+      "description": "Dual clock-syncable delay",
+      "tags": [
+        "Delay",
+        "Digital",
+        "Dual",
+        "Effect",
+        "Hardware"
+      ],
+      "modularGridUrl": "https://www.modulargrid.net/e/alright-devices-chronoblob2"
+    },
+    {
+      "slug": "T-Wrex",
+      "name": "T-Wrex",
+      "description": "Analog bitcrusher and decimator",
+      "tags": [
+        "Distortion",
+        "Effect",
+        "Sample and hold",
+        "Hardware"
+      ],
+      "modularGridUrl": "https://www.modulargrid.net/e/alright-devices-t-wrex-"
+    },
+    {
+      "slug": "Zzzorb",
+      "name": "Zzzorb",
+      "description": "Four-pole multimode filter and VCA",
+      "tags": [
+        "Filter",
+        "VCA",
+        "Hardware"
+      ],
+      "modularGridUrl": "https://www.modulargrid.net/e/alright-devices-zzzorb"
+    }
+  ]
+}

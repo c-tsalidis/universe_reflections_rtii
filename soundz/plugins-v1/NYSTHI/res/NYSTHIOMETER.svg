@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="15"
+   height="380"
+   viewBox="0 0 3.96875 100.54167"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.2 5c3e80d, 2017-08-06"
+   sodipodi:docname="NYSTHIOMETER.svg"
+   inkscape:export-filename="E:\Users\Martin\Documents\Rack_Source\Rack\plugins\ML-modules\res\Quantum.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96">
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.4142136"
+     inkscape:cx="-189.80418"
+     inkscape:cy="257.21204"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer2"
+     showgrid="true"
+     units="px"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     showguides="true"
+     inkscape:snap-to-guides="false"
+     objecttolerance="20"
+     inkscape:window-width="1221"
+     inkscape:window-height="767"
+     inkscape:window-x="142"
+     inkscape:window-y="5"
+     inkscape:window-maximized="0"
+     gridtolerance="17"
+     inkscape:snap-perpendicular="false"
+     inkscape:pagecheckerboard="true"
+     inkscape:snap-page="false"
+     inkscape:snap-text-baseline="true">
+    <inkscape:grid
+       empspacing="20"
+       dotted="false"
+       spacingy="0.52916668"
+       spacingx="0.52916668"
+       originy="100.54167"
+       originx="-7.3436628e-018"
+       id="grid43"
+       type="xygrid" />
+  </sodipodi:namedview>
+  <defs
+     id="defs2">
+    <inkscape:perspective
+       id="perspective4742"
+       inkscape:persp3d-origin="15.875 : 33.51389 : 1"
+       inkscape:vp_z="31.75 : 50.270835 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 50.270835 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <filter
+       id="filter1636"
+       x="-0.25"
+       width="1.5"
+       y="-0.25"
+       height="1.5"
+       inkscape:menu="Non-realistic 3D Shaders"
+       inkscape:menu-tooltip="Deep and dark metal shading"
+       inkscape:label="Deep Metal"
+       style="color-interpolation-filters:sRGB">
+      <feGaussianBlur
+         id="feGaussianBlur1616"
+         in="SourceGraphic"
+         stdDeviation="5"
+         result="result8" />
+      <feComposite
+         id="feComposite1618"
+         in2="result8"
+         operator="xor"
+         result="result19" />
+      <feComposite
+         id="feComposite1620"
+         k2="1"
+         operator="arithmetic"
+         result="result17"
+         in2="result8"
+         k1="0"
+         k3="0"
+         k4="0" />
+      <feComposite
+         id="feComposite1622"
+         in2="result17"
+         result="result6"
+         operator="xor" />
+      <feOffset
+         id="feOffset1624"
+         result="result18"
+         in="result6" />
+      <feDisplacementMap
+         id="feDisplacementMap1626"
+         in2="result17"
+         in="result18"
+         xChannelSelector="A"
+         yChannelSelector="A"
+         scale="100"
+         result="result4" />
+      <feComposite
+         id="feComposite1628"
+         in="result4"
+         in2="result4"
+         result="result2"
+         operator="arithmetic"
+         k3="1"
+         k1="0"
+         k2="0"
+         k4="0" />
+      <feComposite
+         id="feComposite1630"
+         in2="result2"
+         result="fbSourceGraphic"
+         in="result2"
+         operator="over" />
+      <feComposite
+         id="feComposite1632"
+         in="fbSourceGraphic"
+         in2="SourceGraphic"
+         operator="xor"
+         result="result15" />
+      <feComposite
+         id="feComposite1634"
+         result="result16"
+         in2="result8"
+         operator="in"
+         in="result15" />
+    </filter>
+  </defs>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     style="display:inline"
+     inkscape:label="Layer 2"
+     id="layer2"
+     inkscape:groupmode="layer">
+    <rect
+       y="-6.2806193e-06"
+       x="-2.3017215e-08"
+       height="100.54167"
+       width="3.96875"
+       id="bgnd"
+       style="fill:#b7c4c8;fill-opacity:1;stroke-width:0.1080157"
+       inkscape:label="#rect4689" />
+    <path
+       d="m 1.25774,99.218752 v -2.043861 h 0.532108 l 0.2794236,0.71747 q 0.022729,0.06354 0.050805,0.145611 0.029413,0.08207 0.064174,0.189296 l 0.057489,0.180029 q -0.03075,-0.266073 -0.046793,-0.455368 -0.016043,-0.189295 -0.016043,-0.317698 v -0.45934 H 2.71101 v 2.043861 H 2.1789019 L 1.8981414,98.466865 q -0.04412,-0.12046 -0.080217,-0.225036 -0.034761,-0.105899 -0.0615,-0.201209 0.01738,0.21577 0.025402,0.375944 0.00802,0.160172 0.00802,0.280633 v 0.521555 z"
+       style="font-style:normal;font-variant:normal;font-weight:800;font-stretch:condensed;font-size:2.72452211px;line-height:1.25;font-family:Futura;-inkscape-font-specification:'Futura, Ultra-Bold Condensed';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#e6e6e6;fill-opacity:1;stroke:none;stroke-width:0.25542396px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="path4726"
+       inkscape:connector-curvature="0" />
+    <g
+       aria-label="N"
+       style="font-style:normal;font-weight:normal;font-size:10.58333397px;line-height:1.25;font-family:'Bitstream Vera Sans';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458335px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="text873">
+      <path
+         d="M 0.86092929,4.7625003 V 1.5709636 H 1.6836181 l 0.432015,1.1203452 q 0.03514,0.099219 0.078548,0.2273763 0.045475,0.1281575 0.099219,0.2955892 l 0.088883,0.2811198 Q 2.3347412,3.0799155 2.3099365,2.7843263 2.2851318,2.4887371 2.2851318,2.2882326 V 1.5709636 H 3.1078207 V 4.7625003 H 2.2851318 L 1.8510498,3.5884117 Q 1.7828369,3.4003094 1.7270263,3.2370119 1.6732829,3.0716473 1.6319417,2.9228192 q 0.026872,0.3369303 0.039274,0.5870443 0.012402,0.2501139 0.012402,0.4382162 v 0.8144206 z"
+         style="font-style:normal;font-variant:normal;font-weight:800;font-stretch:condensed;font-size:4.23333359px;font-family:Futura;-inkscape-font-specification:'Futura, Ultra-Bold Condensed';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.26458335px"
+         id="path878"
+         inkscape:connector-curvature="0" />
+    </g>
+    <path
+       inkscape:label="SS2"
+       inkscape:connector-curvature="0"
+       id="SS2"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12.69999981px;font-family:Microgramma;-inkscape-font-specification:'Microgramma, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;display:inline;opacity:0;stroke-width:0.26458335px"
+       d="m 7.9359497,13.679785 q 2.021582,0 2.3378413,-0.06511 0.319361,-0.06201 0.319361,-0.496094 0,-0.520898 -0.446485,-0.660425 -0.4433834,-0.127124 -2.2107173,-0.127124 -3.4912597,0 -4.4059326,-0.505395 -0.9146728,-0.508496 -0.9146728,-2.5145747 0,-1.854151 1.1937256,-2.375049 0.9146728,-0.393775 4.0648681,-0.393775 2.80603,0 3.556372,0.151929 1.764233,0.353467 1.764233,2.995166 h -2.793628 q 0,-0.722436 -0.316259,-0.84956 -0.3193606,-0.114722 -2.1983157,-0.114722 -1.8913574,0 -2.1828125,0.06511 -0.2945556,0.07441 -0.2945556,0.520899 0,0.468188 0.4960937,0.607715 0.4960938,0.1395257 2.0308838,0.1395257 3.4571533,0 4.4586423,0.545703 0.992188,0.545703 0.992188,2.514575 0,1.816943 -1.119312,2.32544 Q 11.303186,15.875 7.9235473,15.875 q -2.6013915,0 -3.376538,-0.114722 -1.1937256,-0.176733 -1.624707,-0.837158 -0.434082,-0.648022 -0.434082,-2.260327 h 2.7936279 q 0,0.762744 0.3286621,0.889868 0.3317627,0.127124 2.3254394,0.127124 z" />
+  </g>
+</svg>

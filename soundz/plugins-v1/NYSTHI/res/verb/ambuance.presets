@@ -1,0 +1,95 @@
+{
+    "version": "1",
+    "presets": [
+        {
+            "title" : "Mirror In The Bathroom",
+            "roomsize" : 0.03,
+            "reverbtime" : 2.45,
+            "damping" : 0.6,
+            "inputbw" : 0.9,
+            "taillevel" : -9.0,
+            "earlylevel" : -11.0,
+            "mix" : 0.9
+},
+{
+"title" : "The Quick Fix",
+"roomsize" : 40,
+"reverbtime" : 4,
+"damping" : 0.9,
+"inputbw" : 0.75,
+"taillevel" : -11.0,
+"earlylevel" : -22.0,
+"mix" : 0.5
+},
+{
+"title" : "Bright Small Hall",
+"roomsize" : 50,
+"reverbtime" : 1.5,
+"damping" : 0.1,
+"inputbw" : 0.75,
+"taillevel" : -20.0,
+"earlylevel" : -10.0,
+"mix" : 0.65
+},
+{
+"title" : "Nice Hall",
+"roomsize" : 40,
+"reverbtime" : 20,
+"damping" : 0.5,
+"inputbw" : 0.75,
+"taillevel" : -30.0,
+"earlylevel" : -10.0,
+"mix" : 0.5
+},
+{
+"title" : "The Sewer",
+"roomsize" : 6,
+"reverbtime" : 15,
+"damping" : 0.9,
+"inputbw" : 0.1,
+"taillevel" : -10.0,
+"earlylevel" : -10.0,
+"mix" : 0.75
+},
+{
+"title" : "Last Row In the Church",
+"roomsize" : 200,
+"reverbtime" : 9,
+"damping" : 0.7,
+"inputbw" : 0.8,
+"taillevel" : -8.0,
+"earlylevel" : -15.0,
+"mix" : 0.90
+},
+{
+"title" : "Dalmine",
+"roomsize" : 6,
+"reverbtime" : 15,
+"damping" : 0.369,
+"inputbw" : 0.1,
+"taillevel" : -6.5,
+"earlylevel" : -48.0,
+"mix" : 0.75
+},
+{
+"title" : "ResoVoice1",
+"roomsize" : 0.019,
+"reverbtime" : 5.7,
+"damping" : 0,
+"inputbw" : 1,
+"taillevel" : -25.5,
+"earlylevel" : -0.0,
+"mix" : 0.18
+},
+{
+"title" : "The Other Room",
+"roomsize" : 12,
+"reverbtime" : 1.4,
+"damping" : 0.84,
+"inputbw" : 0.8,
+"taillevel" : -0.5,
+"earlylevel" : -6.0,
+"mix" : 0.4
+}
+	]
+}

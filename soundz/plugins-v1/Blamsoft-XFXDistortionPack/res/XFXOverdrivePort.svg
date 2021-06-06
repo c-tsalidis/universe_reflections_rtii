@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24.43" height="21.16" viewBox="0 0 24.43 21.16">
+  <defs>
+    <radialGradient id="radial-gradient" cx="12.22" cy="10.58" r="10.89" gradientUnits="userSpaceOnUse">
+      <stop offset="0.31" stop-color="#aaa"/>
+      <stop offset="0.78" stop-color="#9d9d9b"/>
+    </radialGradient>
+  </defs>
+  <title>XFXOverdrivePort</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="svg8">
+      <g>
+        <polygon points="18.03 0.5 6.4 0.5 0.58 10.58 6.4 20.66 18.03 20.66 23.85 10.58 18.03 0.5" style="stroke: #c6c6c6;stroke-miterlimit: 10;fill: url(#radial-gradient)"/>
+        <circle cx="12.14" cy="10.58" r="6.59" style="fill: #231f20;stroke: #0a8900;stroke-miterlimit: 10;stroke-width: 0.740000009536743px"/>
+      </g>
+    </g>
+  </g>
+</svg>

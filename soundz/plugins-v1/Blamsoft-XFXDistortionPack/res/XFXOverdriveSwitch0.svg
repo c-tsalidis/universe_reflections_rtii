@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="14.09" height="23.37" viewBox="0 0 14.09 23.37">
+  <title>XFXOverdriveSwitch0</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="svg8">
+      <g>
+        <path d="M1.9.38H12.19A1.53,1.53,0,0,1,13.72,1.9V21.46A1.53,1.53,0,0,1,12.19,23H1.9A1.53,1.53,0,0,1,.38,21.46V1.91A1.54,1.54,0,0,1,1.9.38Z" style="fill: none;stroke: #f4f4e6;stroke-miterlimit: 10;stroke-width: 0.75px"/>
+        <path d="M1.74,1.21H12.35a.61.61,0,0,1,.62.62v19.7a.61.61,0,0,1-.62.62H1.74a.61.61,0,0,1-.62-.62V1.83A.61.61,0,0,1,1.74,1.21Z" style="fill: #414042"/>
+        <rect x="1.13" y="18.87" width="11.84" height="1.47" style="fill: #0a8900"/>
+        <path d="M1.13,20.65v.93a.43.43,0,0,0,.43.42h11a.42.42,0,0,0,.42-.42v-.93Z" style="fill: #0a8900"/>
+        <path d="M12.55,11.83h-11a.43.43,0,0,0-.43.42v.95H13v-.92a.42.42,0,0,0-.41-.44Z" style="fill: #0a8900"/>
+        <rect x="1.13" y="13.52" width="11.84" height="1.47" style="fill: #0a8900"/>
+        <rect x="1.13" y="17.08" width="11.84" height="1.47" style="fill: #0a8900"/>
+        <rect x="1.13" y="15.3" width="11.84" height="1.47" style="fill: #0a8900"/>
+      </g>
+    </g>
+  </g>
+</svg>
