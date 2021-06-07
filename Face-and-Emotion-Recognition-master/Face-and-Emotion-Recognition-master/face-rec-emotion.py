@@ -13,6 +13,7 @@ from utils.inference import apply_offsets
 from utils.inference import load_detection_model
 from utils.preprocessor import preprocess_input
 import pythonosc
+import socket
 
 USE_WEBCAM = True  # If false, loads video file source
 
@@ -113,8 +114,12 @@ from pythonosc.udp_client import SimpleUDPClient
 ip = "127.0.0.1"
 
 
+UDP_PORT = 11000
 emotions_osc_port = 8108
 heartrate_osc_port = 8000
+
+sock = socket.socket(socket.AF_INET, # Internet
+                     socket.SOCK_DGRAM) # UDP
 
 emotions_client = SimpleUDPClient(ip, emotions_osc_port)  # Create emotions client
 heartrate_client = SimpleUDPClient(ip, heartrate_osc_port)  # Create heartrate client
@@ -178,8 +183,10 @@ def take_average_emotion(total):
     average = total / count_before_average
     if average >= 0.5:
         emotions_client.send_message("/happy", 1)
+        sock.sendto(b"happy", (ip, UDP_PORT))
     else:
         emotions_client.send_message("/sad", 1)
+        sock.sendto(b"sad", (ip, UDP_PORT))
     print(average)
     global emotional_block
     emotional_block = 0
@@ -289,7 +296,8 @@ while cap.isOpened():  # True:
                   (int(realWidth - videoWidth / 2), int(realHeight - videoHeight / 2)), boxColor, boxWeight)
     if i > bpmBufferSize:
         cv2.putText(frame, "BPM: %d" % bpmBuffer.mean(), bpmTextLocation, font, fontScale, fontColor, lineType)
-        heartrate_client.send_message("/bpm", int(bpmBuffer.mean()))
+        heartrate_client.send_message("/bpm", int(bpmBuffer.mean())) # send bpm to bpm channel in VCV as OSC data
+        # sock.sendto( bytearray(str(bpmBuffer.mean())), (ip, UDP_PORT)) # send bpm buffer to udp port (Unity's listening to this port)
     else:
         cv2.putText(frame, "Calculating BPM...", loadingTextLocation, font, fontScale, fontColor, lineType)
 
@@ -359,7 +367,7 @@ while cap.isOpened():  # True:
         else:
             color = emotion_probability * np.asarray((0, 255, 0))
             # client.send_message("/happy", 1)
-            emotional_block += 1
+            # emotional_block += 1
         color = color.astype(int)
         color = color.tolist()
 

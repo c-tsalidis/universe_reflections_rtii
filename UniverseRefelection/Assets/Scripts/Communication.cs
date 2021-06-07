@@ -12,6 +12,8 @@ public class Communication : MonoBehaviour {
     private UdpClient listener;
     private IPEndPoint groupEP;
 
+    [SerializeField] private FlockingBoids[] FlockingBoidsArray;
+
     private void Start() {
         StartListener();
     }
@@ -20,7 +22,42 @@ public class Communication : MonoBehaviour {
         try {
             // Debug.Log("Waiting for broadcast");
             byte[] bytes = listener.Receive(ref groupEP);
+            var receivedMessage = Encoding.ASCII.GetString(bytes, 0, bytes.Length);
+            switch (receivedMessage) {
+                
+                case "happy":
+                {
+                    // boids will be less spaced out and higher instances
+                    foreach (var flock in FlockingBoidsArray)
+                    {
+                        if (flock.isMainFlock) break;
+                        flock.maximumDistance = flock.minSeparation / 2.0f;
+                        flock.desiredSeparation = flock.minSeparation;
+                    }
+                    break;
+                }
+                case "sad":
+                {
+                    // boids more spaced out and fewer instances
+                    foreach (var flock in FlockingBoidsArray)
+                    {
+                        if (flock.isMainFlock) break;
+                        flock.maximumDistance = flock.maxSeparation / 2.0f;
+                        flock.desiredSeparation = flock.maxSeparation;
+                    }
+                    break;
+                }
+                case "neutral":
+                {
+                    // boids more spaced out and fewer instances
+                    foreach (var flock in FlockingBoidsArray)
+                    {
+                        if (flock.isMainFlock) break;   
+                    }
+                    break;
+                }
 
+            }
             Debug.Log($"Received broadcast from {groupEP} :");
             Debug.Log($" {Encoding.ASCII.GetString(bytes, 0, bytes.Length)}");
         }

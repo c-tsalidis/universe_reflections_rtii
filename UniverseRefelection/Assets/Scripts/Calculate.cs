@@ -22,4 +22,11 @@ public static class Calculate {
         var x = maxMagnitude / Vector3.Magnitude(vector);
         return vector = Multiply(x, vector);
     } 
+    
+    public static float Map(float value, float oldMin, float oldMax, float newMin, float newMax){
+        float oldRange = (oldMax - oldMin);
+        float newRange = (newMax - newMin);
+        float newValue = (((value - oldMin) * newRange) / oldRange) + newMin;
+        return(newValue);
+    }
 }
