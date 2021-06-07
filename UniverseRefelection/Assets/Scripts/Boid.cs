@@ -1,6 +1,7 @@
 using UnityEngine;
 using System;
 using Unity.Mathematics;
+using Random = System.Random;
 
 public class Boid: MonoBehaviour {
     public Vector3 acceleration;
@@ -11,11 +12,17 @@ public class Boid: MonoBehaviour {
     public float maxforce = 0.05f; // Maximum steering force
     public float maximumDistance = 100.0f;
     public float desiredSeparation = 25.0f;
+    public Color desiredColor = Color.white;
 
     public void SetUp(float x, float y, float z) {
         acceleration = new Vector3(0, 0, 0);
         velocity = new Vector3(UnityEngine.Random.Range(-1, 1), UnityEngine.Random.Range(-1, 1), UnityEngine.Random.Range(-1, 1));
         // position = new Vector3(x, y, z);
+        var i = UnityEngine.Random.Range(0, 100);
+        desiredColor = i > 30 ? UnityEngine.Random.ColorHSV(0.05f, 0.14f, 0,0.7f,0.5f,1) : UnityEngine.Random.ColorHSV(0.47f, 0.61f, 0,0.7f,0.5f,1);
+        //GetComponentInChildren<MeshRenderer>().material.SetColor("MainColor", desiredColor);
+        var trailModule = GetComponentInChildren<ParticleSystem>().trails;
+        trailModule.colorOverLifetime = desiredColor;
     }
 
     public void Run(Boid [] boids) {
