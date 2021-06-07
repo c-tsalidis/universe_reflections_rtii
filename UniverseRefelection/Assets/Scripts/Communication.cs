@@ -57,6 +57,28 @@ public class Communication : MonoBehaviour {
                     break;
                 }
 
+                case "bpmIncrease":
+                {
+                    // boids more spaced out and fewer instances
+                    foreach (var flock in FlockingBoidsArray)
+                    {
+                        if (flock.isMainFlock) break;
+                        flock.maxspeed = flock.maxMaxSpeed;
+                    }
+                    break;
+                }
+                
+                case "bpmDecrease":
+                {
+                    // boids more spaced out and fewer instances
+                    foreach (var flock in FlockingBoidsArray)
+                    {
+                        if (flock.isMainFlock) break;
+                        flock.maxspeed = flock.minSpeed;
+                    }
+                    break;
+                }
+
             }
             Debug.Log($"Received broadcast from {groupEP} :");
             Debug.Log($" {Encoding.ASCII.GetString(bytes, 0, bytes.Length)}");

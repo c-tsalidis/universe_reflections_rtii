@@ -98,6 +98,9 @@
         },
         {
             "m_Id": "b6cecb46c02a4b428869e9fefb62d62d"
+        },
+        {
+            "m_Id": "ba9d6a1a4dbb4beab94f9a5928f6514b"
         }
     ],
     "m_GroupDatas": [],
@@ -323,6 +326,20 @@
             "m_InputSlot": {
                 "m_Node": {
                     "m_Id": "37f372eccd8645aa9c2178cce17c54b9"
+                },
+                "m_SlotId": 0
+            }
+        },
+        {
+            "m_OutputSlot": {
+                "m_Node": {
+                    "m_Id": "ba9d6a1a4dbb4beab94f9a5928f6514b"
+                },
+                "m_SlotId": 3
+            },
+            "m_InputSlot": {
+                "m_Node": {
+                    "m_Id": "b6cecb46c02a4b428869e9fefb62d62d"
                 },
                 "m_SlotId": 0
             }
@@ -747,6 +764,21 @@
     },
     "m_Labels": [],
     "m_Space": 0
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
+    "m_ObjectId": "2a4cd07d29cc4c5ab2911f205fcfe27c",
+    "m_Id": 2,
+    "m_DisplayName": "Power",
+    "m_SlotType": 0,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "Power",
+    "m_StageCapability": 3,
+    "m_Value": 1.0,
+    "m_DefaultValue": 1.0,
+    "m_Labels": []
 }
 
 {
@@ -1195,7 +1227,7 @@
     },
     "m_SurfaceType": 1,
     "m_AlphaMode": 2,
-    "m_TwoSided": true,
+    "m_TwoSided": false,
     "m_AlphaClip": false,
     "m_CustomEditorGUI": ""
 }
@@ -1219,6 +1251,30 @@
         "y": 0.0
     },
     "m_Labels": []
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.NormalMaterialSlot",
+    "m_ObjectId": "702aac82504e41b389812a3fd1db3e53",
+    "m_Id": 0,
+    "m_DisplayName": "Normal",
+    "m_SlotType": 0,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "Normal",
+    "m_StageCapability": 3,
+    "m_Value": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+    },
+    "m_DefaultValue": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+    },
+    "m_Labels": [],
+    "m_Space": 2
 }
 
 {
@@ -1466,6 +1522,8 @@
         "m_GuidSerialized": "778dc50d-74c5-415d-b027-e7ed650f8952"
     },
     "m_Name": "Color",
+    "m_DefaultRefNameVersion": 0,
+    "m_RefNameGeneratedByDisplayName": "",
     "m_DefaultReferenceName": "Color_8c1b15b31a2144c39861cb81b9999f7c",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,
@@ -1747,6 +1805,8 @@
         "m_GuidSerialized": "a81d64db-f319-47b1-8e31-9bdb580d03e5"
     },
     "m_Name": "DistortionDirection",
+    "m_DefaultRefNameVersion": 0,
+    "m_RefNameGeneratedByDisplayName": "",
     "m_DefaultReferenceName": "Vector2_9ec1bea632514c359d1459db927858c0",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,
@@ -1785,6 +1845,8 @@
         "m_GuidSerialized": "8fc36139-50e4-42e5-9cd2-da6582fb744a"
     },
     "m_Name": "DistortionTexture",
+    "m_DefaultRefNameVersion": 0,
+    "m_RefNameGeneratedByDisplayName": "",
     "m_DefaultReferenceName": "Texture2D_a4efd21ce4fa47a7bc78a67d9e57d79f",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,
@@ -1958,6 +2020,8 @@
         "m_GuidSerialized": "b692480c-3187-4859-8b6d-02069985eb5c"
     },
     "m_Name": "DistortionTiling",
+    "m_DefaultRefNameVersion": 0,
+    "m_RefNameGeneratedByDisplayName": "",
     "m_DefaultReferenceName": "Vector1_b68fe4b39f4d46319f616f88a4e7620f",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,
@@ -2039,6 +2103,47 @@
     "m_Precision": 0,
     "m_PreviewExpanded": true,
     "m_PreviewMode": 0,
+    "m_CustomColors": {
+        "m_SerializableColors": []
+    }
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.FresnelNode",
+    "m_ObjectId": "ba9d6a1a4dbb4beab94f9a5928f6514b",
+    "m_Group": {
+        "m_Id": ""
+    },
+    "m_Name": "Fresnel Effect",
+    "m_DrawState": {
+        "m_Expanded": true,
+        "m_Position": {
+            "serializedVersion": "2",
+            "x": 1843.0,
+            "y": 1675.0,
+            "width": 208.0,
+            "height": 326.0
+        }
+    },
+    "m_Slots": [
+        {
+            "m_Id": "702aac82504e41b389812a3fd1db3e53"
+        },
+        {
+            "m_Id": "d0632d8e93c6451c982c6ccc69e1f1fe"
+        },
+        {
+            "m_Id": "2a4cd07d29cc4c5ab2911f205fcfe27c"
+        },
+        {
+            "m_Id": "d4dc6ae499de476aa8d31485a6bed858"
+        }
+    ],
+    "synonyms": [],
+    "m_Precision": 0,
+    "m_PreviewExpanded": true,
+    "m_PreviewMode": 2,
     "m_CustomColors": {
         "m_SerializableColors": []
     }
@@ -2148,6 +2253,45 @@
     "m_CustomColors": {
         "m_SerializableColors": []
     }
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.ViewDirectionMaterialSlot",
+    "m_ObjectId": "d0632d8e93c6451c982c6ccc69e1f1fe",
+    "m_Id": 1,
+    "m_DisplayName": "View Dir",
+    "m_SlotType": 0,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "ViewDir",
+    "m_StageCapability": 3,
+    "m_Value": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+    },
+    "m_DefaultValue": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+    },
+    "m_Labels": [],
+    "m_Space": 2
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
+    "m_ObjectId": "d4dc6ae499de476aa8d31485a6bed858",
+    "m_Id": 3,
+    "m_DisplayName": "Out",
+    "m_SlotType": 1,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "Out",
+    "m_StageCapability": 3,
+    "m_Value": 0.0,
+    "m_DefaultValue": 0.0,
+    "m_Labels": []
 }
 
 {
@@ -2514,6 +2658,8 @@
         "m_GuidSerialized": "b16935fb-fde0-4a7b-8bd8-c826dd78d983"
     },
     "m_Name": "DistortionSpeed",
+    "m_DefaultRefNameVersion": 0,
+    "m_RefNameGeneratedByDisplayName": "",
     "m_DefaultReferenceName": "Vector1_f01843dc74964a1bb7851be521b3b7c5",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,
@@ -2558,6 +2704,8 @@
         "m_GuidSerialized": "c9c50ef4-fc81-411c-aea2-6442260ab3de"
     },
     "m_Name": "Direction",
+    "m_DefaultRefNameVersion": 0,
+    "m_RefNameGeneratedByDisplayName": "",
     "m_DefaultReferenceName": "Vector4_f1aaaa45b5444c69a6df26d8f2990cb2",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,

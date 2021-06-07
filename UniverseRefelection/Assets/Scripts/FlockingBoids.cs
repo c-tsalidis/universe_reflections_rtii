@@ -43,7 +43,8 @@ public class FlockingBoids : MonoBehaviour {
         // Camera.main.transform.position = Vector3.Lerp(Camera.main.transform.position, _flock.boids[15].transform.position, 1);
 
         if(!isMainFlock) return;
-        _cameraTransform.position = _flock.AveragePosition();
+        // _cameraTransform.position = _flock.AveragePosition();
+        _cameraTransform.position = Vector3.Lerp(_cameraTransform.position, _flock.AveragePosition(), 0.05f);
          _cameraTransform.LookAt(Vector3.zero);
         // _cameraTransform.rotation = Quaternion.Slerp(_cameraTransform.rotation, _flock.boids[_flock.boids.Count / 2].transform.rotation, 50);
         // _cameraTransform.rotation = Quaternion.Lerp(Camera.main.transform.rotation, _flock.boids[15].transform.rotation, 100);

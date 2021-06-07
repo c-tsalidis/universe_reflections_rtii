@@ -31,6 +31,7 @@ def buildGauss(frame, levels):
         pyramid.append(frame)
     return pyramid
 
+
 def reconstructFrame(pyramid, index, levels):
     filteredFrame = pyramid[index]
     for level in range(levels):
@@ -38,13 +39,13 @@ def reconstructFrame(pyramid, index, levels):
     filteredFrame = filteredFrame[:videoHeight, :videoWidth]
     return filteredFrame
 
+
 realWidth = 320
 realHeight = 240
 videoWidth = 160
 videoHeight = 120
 videoChannels = 3
 videoFrameRate = 15
-
 
 # Color Magnification Parameters
 levels = 3
@@ -57,37 +58,35 @@ bufferIndex = 0
 # Output Display Parameters
 font = cv2.FONT_HERSHEY_SIMPLEX
 loadingTextLocation = (20, 30)
-bpmTextLocation = (videoWidth//2 + 5, 30)
+bpmTextLocation = (videoWidth // 2 + 5, 30)
 fontScale = 1
-fontColor = (255,255,255)
+fontColor = (255, 255, 255)
 lineType = 2
 boxColor = (0, 255, 0)
 boxWeight = 3
 
 # Initialize Gaussian Pyramid
 firstFrame = np.zeros((videoHeight, videoWidth, videoChannels))
-firstGauss = buildGauss(firstFrame, levels+1)[levels]
+firstGauss = buildGauss(firstFrame, levels + 1)[levels]
 videoGauss = np.zeros((bufferSize, firstGauss.shape[0], firstGauss.shape[1], videoChannels))
-fourierTransformAvg = np.zeros((bufferSize))
+fourierTransformAvg = np.zeros(bufferSize)
 
 # Bandpass Filter for Specified Frequencies
-frequencies = (1.0*videoFrameRate) * np.arange(bufferSize) / (1.0*bufferSize)
+frequencies = (1.0 * videoFrameRate) * np.arange(bufferSize) / (1.0 * bufferSize)
 mask = (frequencies >= minFrequency) & (frequencies <= maxFrequency)
 
 # Heart Rate Calculation Variables
 bpmCalculationFrequency = 15
 bpmBufferIndex = 0
 bpmBufferSize = 10
-bpmBuffer = np.zeros((bpmBufferSize))
-
-
-
-
+bpmBuffer = np.zeros(bpmBufferSize)
 
 dispatcher = Dispatcher()
-count_before_average = 50
+count_before_average = 10
 emotional_block = 0
 counter = 0
+
+previousBpm = 0
 
 
 def set_filter(address: str, *args: List[Any]) -> None:
@@ -113,13 +112,12 @@ from pythonosc.udp_client import SimpleUDPClient
 
 ip = "127.0.0.1"
 
-
 UDP_PORT = 11000
 emotions_osc_port = 8108
 heartrate_osc_port = 8000
 
-sock = socket.socket(socket.AF_INET, # Internet
-                     socket.SOCK_DGRAM) # UDP
+sock = socket.socket(socket.AF_INET,  # Internet
+                     socket.SOCK_DGRAM)  # UDP
 
 emotions_client = SimpleUDPClient(ip, emotions_osc_port)  # Create emotions client
 heartrate_client = SimpleUDPClient(ip, heartrate_osc_port)  # Create heartrate client
@@ -249,65 +247,11 @@ if (USE_WEBCAM == True):
 else:
     cap = cv2.VideoCapture('./test/testvdo.mp4')  # Video file source
 
-
 i = 0
 while cap.isOpened():  # True:
     ret, frame = cap.read()
 
     # frame = video_capture.read()[1]
-
-
-
-
-
-    # HEART RATE MONITORING
-    detectionFrame = frame[int(videoHeight / 2):int(realHeight - videoHeight / 2), int(videoWidth / 2):int(realWidth - videoWidth / 2), :]
-    # Construct Gaussian Pyramid
-    videoGauss[bufferIndex] = buildGauss(detectionFrame, levels + 1)[levels]
-    fourierTransform = np.fft.fft(videoGauss, axis=0)
-
-    # Bandpass Filter
-    fourierTransform[mask == False] = 0
-
-    # Grab a Pulse
-    if bufferIndex % bpmCalculationFrequency == 0:
-        i = i + 1
-        for buf in range(bufferSize):
-            fourierTransformAvg[buf] = np.real(fourierTransform[buf]).mean()
-        hz = frequencies[np.argmax(fourierTransformAvg)]
-        bpm = 60.0 * hz
-        bpmBuffer[bpmBufferIndex] = bpm
-        bpmBufferIndex = (bpmBufferIndex + 1) % bpmBufferSize
-
-    # Amplify
-    filtered = np.real(np.fft.ifft(fourierTransform, axis=0))
-    filtered = filtered * alpha
-
-    # Reconstruct Resulting Frame
-    filteredFrame = reconstructFrame(filtered, bufferIndex, levels)
-    outputFrame = detectionFrame + filteredFrame
-    outputFrame = cv2.convertScaleAbs(outputFrame)
-
-    bufferIndex = (bufferIndex + 1) % bufferSize
-
-    frame[int(videoHeight / 2):int(realHeight - videoHeight / 2), int(videoWidth / 2):int(realWidth - videoWidth / 2),
-    :] = outputFrame
-    cv2.rectangle(frame, (int(videoWidth / 2), int(videoHeight / 2)),
-                  (int(realWidth - videoWidth / 2), int(realHeight - videoHeight / 2)), boxColor, boxWeight)
-    if i > bpmBufferSize:
-        cv2.putText(frame, "BPM: %d" % bpmBuffer.mean(), bpmTextLocation, font, fontScale, fontColor, lineType)
-        heartrate_client.send_message("/bpm", int(bpmBuffer.mean())) # send bpm to bpm channel in VCV as OSC data
-        # sock.sendto( bytearray(str(bpmBuffer.mean())), (ip, UDP_PORT)) # send bpm buffer to udp port (Unity's listening to this port)
-    else:
-        cv2.putText(frame, "Calculating BPM...", loadingTextLocation, font, fontScale, fontColor, lineType)
-
-
-
-
-
-
-
-
 
     # To print the facial landmarks
     # landmrk = face_recognition.face_landmarks(frame)
@@ -385,12 +329,59 @@ while cap.isOpened():  # True:
             counter = 0
             take_average_emotion(emotional_block)
 
-
-
     frame = cv2.cvtColor(rgb_image, cv2.COLOR_RGB2BGR)
     cv2.imshow('window_frame', frame)
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
+
+    # HEART RATE MONITORING
+    detectionFrame = frame[int(videoHeight / 2):int(realHeight - videoHeight / 2),
+                     int(videoWidth / 2):int(realWidth - videoWidth / 2), :]
+    # Construct Gaussian Pyramid
+    videoGauss[bufferIndex] = buildGauss(detectionFrame, levels + 1)[levels]
+    fourierTransform = np.fft.fft(videoGauss, axis=0)
+
+    # Bandpass Filter
+    fourierTransform[mask == False] = 0
+
+    # Grab a Pulse
+    if bufferIndex % bpmCalculationFrequency == 0:
+        i = i + 1
+        for buf in range(bufferSize):
+            fourierTransformAvg[buf] = np.real(fourierTransform[buf]).mean()
+        hz = frequencies[np.argmax(fourierTransformAvg)]
+        bpm = 60.0 * hz
+        bpmBuffer[bpmBufferIndex] = bpm
+        bpmBufferIndex = (bpmBufferIndex + 1) % bpmBufferSize
+
+    # Amplify
+    filtered = np.real(np.fft.ifft(fourierTransform, axis=0))
+    filtered = filtered * alpha
+
+    # Reconstruct Resulting Frame
+    filteredFrame = reconstructFrame(filtered, bufferIndex, levels)
+    outputFrame = detectionFrame + filteredFrame
+    outputFrame = cv2.convertScaleAbs(outputFrame)
+
+    bufferIndex = (bufferIndex + 1) % bufferSize
+
+    frame[int(videoHeight / 2):int(realHeight - videoHeight / 2), int(videoWidth / 2):int(realWidth - videoWidth / 2),
+    :] = outputFrame
+    cv2.rectangle(frame, (int(videoWidth / 2), int(videoHeight / 2)),
+                  (int(realWidth - videoWidth / 2), int(realHeight - videoHeight / 2)), boxColor, boxWeight)
+    if i > bpmBufferSize:
+        cv2.putText(frame, "BPM: %d" % bpmBuffer.mean(), bpmTextLocation, font, fontScale, fontColor, lineType)
+        heartrate_client.send_message("/bpm", int(bpmBuffer.mean()))  # send bpm to bpm channel in VCV as OSC data
+        if bpmBuffer.mean() > previousBpm:
+            sock.sendto(b"bpmIncrease", (ip, UDP_PORT))  # send bpm buffer to udp port (Unity's listening to this port)
+            previousBpm = bpmBuffer.mean()
+        elif bpmBuffer.mean() < previousBpm:
+            sock.sendto(b"bpmDecrease", (ip, UDP_PORT))  # send bpm buffer to udp port (Unity's listening to this port)
+            previousBpm = bpmBuffer.mean()
+    else:
+        cv2.putText(frame, "Calculating BPM...", loadingTextLocation, font, fontScale, fontColor, lineType)
+
+    cv2.imshow('heart rate', outputFrame)
 
 cap.release()
 cv2.destroyAllWindows()
