@@ -19,10 +19,11 @@ public class Boid: MonoBehaviour {
         velocity = new Vector3(UnityEngine.Random.Range(-1, 1), UnityEngine.Random.Range(-1, 1), UnityEngine.Random.Range(-1, 1));
         // position = new Vector3(x, y, z);
         var i = UnityEngine.Random.Range(0, 100);
-        desiredColor = i > 30 ? UnityEngine.Random.ColorHSV(0.05f, 0.14f, 0,0.7f,0.5f,1) : UnityEngine.Random.ColorHSV(0.47f, 0.61f, 0,0.7f,0.5f,1);
+        desiredColor = i > 30 ? UnityEngine.Random.ColorHSV(0.05f, 0.14f, 0,1,0.5f,1) : UnityEngine.Random.ColorHSV(0.47f, 0.61f, 0,0.7f,0.5f,1);
         //GetComponentInChildren<MeshRenderer>().material.SetColor("MainColor", desiredColor);
         var trailModule = GetComponentInChildren<ParticleSystem>().trails;
         trailModule.colorOverLifetime = desiredColor;
+        transform.localScale = Vector3.one*UnityEngine.Random.Range(1.0f, 2.0f);
     }
 
     public void Run(Boid [] boids) {
