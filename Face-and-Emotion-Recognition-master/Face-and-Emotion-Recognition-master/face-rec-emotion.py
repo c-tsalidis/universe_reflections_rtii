@@ -20,6 +20,9 @@ from pythonosc.dispatcher import Dispatcher
 from typing import List, Any
 
 dispatcher = Dispatcher()
+count_before_average = 50
+emotional_block = 0
+counter = 0
 
 
 def set_filter(address: str, *args: List[Any]) -> None:
@@ -43,27 +46,10 @@ dispatcher.map("/filter*", set_filter)  # Map wildcard address to set_filter fun
 from pythonosc.osc_server import BlockingOSCUDPServer
 from pythonosc.udp_client import SimpleUDPClient
 
-#server = BlockingOSCUDPServer(("127.0.0.1", 8108), dispatcher)
-#client = SimpleUDPClient("127.0.0.1", 8108)
 ip = "127.0.0.1"
 port = 8108
 
 client = SimpleUDPClient(ip, port)  # Create client
-
-client.send_message("/emotions", 0.5)   # Send float message
-#client.send_message("/some/address", [1, 2., "hello"])  # Send message with int, float and string
-# Send message and receive exactly one message (blocking)
-
-#server.handle_request()
-
-#client.send_message("/filter8", [6., -2.])
-#server.handle_request()
-
-
-
-
-
-
 
 # parameters for loading data and images
 emotion_model_path = './models/emotion_model.hdf5'
@@ -118,6 +104,19 @@ face_locations = []
 face_encodings = []
 face_names = []
 process_this_frame = True
+
+
+def take_average_emotion(total):
+    average = total / count_before_average
+    if average >= 0.5:
+        client.send_message("/happy", 1)
+    else:
+        client.send_message("/sad", 1)
+    print(average)
+    global emotional_block
+    emotional_block = 0
+    global counter
+    counter = 0
 
 
 def face_compare(frame, process_this_frame):
@@ -193,10 +192,9 @@ while cap.isOpened():  # True:
     faces = detector(rgb_image)
     # face_locations = face_recognition.face_locations(rgb_image)
     # print (reversed(face_locations))
-    face_name = "face"#face_compare(rgb_image, process_this_frame)
-    emotionalData = []
+    face_name = "face"  # face_compare(rgb_image, process_this_frame)
+
     for face_coordinates, fname in zip(faces, face_name):
-        print("forrrrr")
         x1, x2, y1, y2 = apply_offsets(face_utils.rect_to_bb(face_coordinates), emotion_offsets)
         gray_face = gray_image[y1:y2, x1:x2]
         try:
@@ -222,24 +220,24 @@ while cap.isOpened():  # True:
 
         if emotion_text == 'angry':
             color = emotion_probability * np.asarray((255, 0, 0))
-            emotionalData = [0,0,emotion_probability]
-            client.send_message("/sad", 1)
+            # client.send_message("/sad", 1)
+
         elif emotion_text == 'sad':
             color = emotion_probability * np.asarray((0, 0, 255))
-            emotionalData = [0, 0, emotion_probability]
-            client.send_message("/sad", 1)
+            # client.send_message("/sad", 1)
         elif emotion_text == 'happy':
             color = emotion_probability * np.asarray((255, 255, 0))
-            emotionalData = [0, emotion_probability, 0]
-            client.send_message("/happy", 1)
+            # client.send_message("/happy", 1)
+            emotional_block += 1
+
         elif emotion_text == 'surprise':
             color = emotion_probability * np.asarray((0, 255, 255))
-            emotionalData = [0, emotion_probability, 0]
-            client.send_message("/happy", 1)
+            # client.send_message("/happy", 1)
+            emotional_block += 1
         else:
             color = emotion_probability * np.asarray((0, 255, 0))
-            emotionalData = [emotion_probability, 0, 0]
-
+            # client.send_message("/happy", 1)
+            emotional_block += 1
         color = color.astype(int)
         color = color.tolist()
 
@@ -251,10 +249,13 @@ while cap.isOpened():  # True:
         draw_bounding_box(face_utils.rect_to_bb(face_coordinates), rgb_image, color)
         draw_text(face_utils.rect_to_bb(face_coordinates), rgb_image, name,
                   color, 0, -45, 0.5, 1)
-    #Send data to other programs
 
-    #var = dispatcher.map(0.5)
-    #client.send_message("\emotions", var)
+        counter += 1
+        if counter >= count_before_average:
+            counter = 0
+            take_average_emotion(emotional_block)
+
+
 
     frame = cv2.cvtColor(rgb_image, cv2.COLOR_RGB2BGR)
     cv2.imshow('window_frame', frame)
