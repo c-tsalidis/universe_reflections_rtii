@@ -122,7 +122,7 @@ public class Boid: MonoBehaviour {
 
     public Vector3 Seek(Vector3 target) {
         // if the boids are heading very far off the screen (more than the maximum distance they should have to the origin point), then change their target position to zero
-        if (Vector3.Distance(target, Vector3.zero) > maximumDistance) {
+        if (Mathf.Abs( Vector3.Distance(target, Vector3.zero)) > maximumDistance) {
             target = Vector3.zero;
         }
         var desired = Calculate.Subtract(target, position);  // A vector pointing from the location to the target
