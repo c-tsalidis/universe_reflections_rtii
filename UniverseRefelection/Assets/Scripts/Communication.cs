@@ -84,7 +84,7 @@ public class Communication : MonoBehaviour {
             Debug.Log($" {Encoding.ASCII.GetString(bytes, 0, bytes.Length)}");
         }
         catch (SocketException e) {
-            Debug.LogError(e);
+            // Debug.LogError(e);
         }
     }
 
